@@ -1,0 +1,13 @@
+{% load static %}
+    <div class="header">
+        <div class="bkg">
+            <img src="{% static 'image/OIP (5).jpg' %}" class="bg">
+                 <ul>
+                    <li><a href="{% url 'artist:home' %}">Home</a></li>
+                    <li><a href="{% url 'artist:review' %}">Review</a></li>
+                    <li><a href="{% url 'artist:all_artist' %}">Album</a></li>
+                    <li><a href="{% url 'artist:new_artist' %}"> </a></li>
+                </ul> 
+        </div>
+            
+    </div>

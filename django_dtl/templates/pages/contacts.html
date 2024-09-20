@@ -1,0 +1,16 @@
+{% extends "partials/base.html"%}
+
+{% block title %}
+<title>Contact page</title>
+{% endblock title %}
+
+{% block content %}
+<h1>send us an email: contact@sqi.com</h1>
+{{ my_price }}
+<ul>
+{% for price in my_price %}
+    <li><a href="">{{ my_price }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

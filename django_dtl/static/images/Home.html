@@ -1,0 +1,58 @@
+{% extends "partials/Base.html" %}
+{% load static %}
+
+ {% block title %}{% endblock title %}       
+
+{% block body %}
+    <div class="ball"></div>
+    <div class= "pic"></div>
+
+    <div class="header">
+        <div class="bkg">
+            <img src="{% static 'image/OIP (5).jpg' %}" class="bg">
+                 <ul>
+                    <li><a href="{% url 'tem:home' %}">Home Page</a></li>
+                    <li><a href="{% url 'tem:menu' %}">Menu</a></li>
+                    <li><a href="{% url 'tem:contact_information' %}">Contact</a></li>
+                    <li><a href="{% url 'tem:about' %}">About </a></li>
+                </ul> 
+        </div>
+            
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to McCoy's <span>Bakery</span></h1>
+            <h2>Order delicious loaves and cakes for your party.</h2>
+            <p>We make it. You Order it. We deliver it.</p>
+                {% comment %} <a href="{%url 'tem':home %}">Order Now</a> {% endcomment %}
+        </div>
+        
+    </div>
+
+    <div class="products">
+        <img src="{% static 'image/pou.jpg' %}">
+    </div>
+    <div class="body">
+        <div class="popup hidden">
+            <button id="close">&times</button>
+            <h1>Sign up here</h1>
+            <p>At first, the site was modest. 
+            Clara spent countless hours curating listings, 
+            personally reviewing each one, 
+            and ensuring that every seller adhered 
+            to her standards of quality and authenticity. 
+            The site featured vintage jewelry, rare books, 
+            and handcrafted art, each item carefully 
+            photographed and described.
+            </p>
+            <a href="#">Click here</a>
+        </div>
+    </div>
+    {% endblock body %}
+
+    {% block scripts %}
+    <script src="{% static 'js/works.js' %}"></script>
+    {% endblock scripts %}
+</body>
+</html>

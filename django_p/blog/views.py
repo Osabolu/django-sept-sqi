@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 from django.urls import path
 from blog import views
+
 urlpatterns = [
-    path("about/", views.about, name='about'), 
+    path("about/", views.about, name="about"),
 ]

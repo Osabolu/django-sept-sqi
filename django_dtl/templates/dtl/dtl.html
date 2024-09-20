@@ -6,6 +6,17 @@
     <title>DTL syntax</title>
 </head>
 <body>
-    <h1>{{my_name}}</h1>
+    <h1>My name is {{ my_name }}</h1>
+    {% if is_dark %}
+    <p>You are dark in complexion</p>
+    {% else %}
+    <p>you are not dark in complexion</p>
+    {% endif %}
+    
+    <ul>
+    {% for name in students %}
+    <li>{{ name }}</li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
